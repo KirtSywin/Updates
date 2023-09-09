@@ -39,9 +39,34 @@ button {
     top: var(--topNavbarHeight);
   }
 }
-.User{
-  color:aqua;
+
+.me-2{
+  font-size: 50px;
 }
-.Interface{
-  color:red;
+.nav{
+  background-color: #09f67f;
+}
+.navtext{/* Href*/
+  color: white;
+}
+.navside{
+  background-color: black;
+}
+/*Sidebar*/
+/* CSS for sidebar transition */
+.offcanvas.sidebar-nav {
+  position: fixed;
+  top: 96px;
+  left: -300px; /* Initially hidden */
+  width: 300px; /* Width of the sidebar */
+  height: 100%;
+  background-color:#09f67f; /* Change this to your desired background color */
+  transition: left 0.2s ease; /* Add a transition effect */
+}
+.offcanvas.show.sidebar-nav {
+  left: 0; /* Show the sidebar when the 'show' class is added */
+}
+.btnaddmed{
+  height: 50px;
+  width: 180px;
 }
